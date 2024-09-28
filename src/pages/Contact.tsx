@@ -1,5 +1,5 @@
 import React, { useRef, useState, ChangeEvent, FormEvent } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import StarsCanvas from "../components/canvas/Star";
 import EarthCanvas from "../components/canvas/Earth";
 

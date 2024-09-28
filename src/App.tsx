@@ -1,4 +1,4 @@
-import HamburgerMenu from './components/Navbar'
+// import HamburgerMenu from './components/Navbar'
 import { BrowserRouter } from 'react-router-dom'
 import { NavbarMain } from './components/Navbar2'
 import './App.css'

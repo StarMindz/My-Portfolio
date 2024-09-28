@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
             <h1 className="text-large font-playfair font-bold">Projects</h1>
             <span className="block my-[30px] w-[100px] h-[2px] bg-teal"></span>
             <div className="w-full flex flex-col justify-center items-center opacity-100 gap-10" style={{ opacity: 1, transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d' }}>
-                {projects.map((project, index) => (
+                {projects.map((project) => (
                     <>
                         {project.type === 'web' ? (
                             <div className="w-[100%] lg:w-[80%] p-[8px] relative rounded-3xl outline outline-1 outline-[#f2f2f265] outline-offset-[-1px] bg-[#f2f2f20a] shadow-[0_40px_80px_#00000080] hover:shadow-[0_40px_80px_#000000cc] transition-all duration-300 ease-in-out">
