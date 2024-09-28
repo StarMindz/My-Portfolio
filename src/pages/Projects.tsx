@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
                                 <p className="text-[#f2f2f2cc] mb-4">{project.description}</p>
                                 <img src="/public/Projects/arrow.svg" className="absolute right-[25px] top-[33px] h-[32px] group-hover:translate-x-3 transition-transform duration-300 ease-in-out"/>
                                 <div className="flex items-center justify-center flex-wrap gap-10 ">
-                                    {project?.videos?.map((video, index) => (
+                                    {project?.videos?.map((video) => (
                                         <video src={video} className="rounded-xl object-contain overflow-hidden max-h-[81vh] max-w-[80vw] group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out" muted autoPlay loop />
                                     ))}
                                 </div>
