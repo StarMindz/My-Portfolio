@@ -1,34 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import HamburgerMenu from './components/Navbar'
+import { BrowserRouter } from 'react-router-dom'
+import { NavbarMain } from './components/Navbar2'
 import './App.css'
+import Homepage from './pages/Homepage'
+import Aboutme from './pages/Aboutme'
+import Expertise from './pages/Expertise'
+import Skills from './pages/Skills'
+import Experience from './pages/Experience'
+import Projects from './pages/Projects'
+import Testimonial from './pages/Testimonial'
+import Contact from './pages/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const scrollToSection = (page: string) => {
+    console.log("i'm in scrollToSection")
+    const section = document.getElementById(page);
+    if (section) {
+      const offset = -70;
+      const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className=''>
+      <BrowserRouter>
+      {/* <HamburgerMenu scrollToSection={scrollToSection} /> */}
+      <NavbarMain  scrollToSection={scrollToSection} />
+      <Homepage scrollToSection={scrollToSection} />
+      <Aboutme />
+      <Expertise />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Testimonial />
+      <Contact />
+      </BrowserRouter>
+    </div>
   )
 }
 
