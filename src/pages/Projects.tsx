@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
                                     <h1 className="text-[30px] font-playfair font-bold mb-3">{project.name}</h1>
                                     <p className="text-[#f2f2f2cc] mb-4">{project.description}</p>
                                     <img src="/Projects/arrow.svg" className="absolute right-[25px] top-[33px] h-[32px] group-hover:translate-x-3 transition-transform duration-300 ease-in-out"/>
-                                    <video className="w-fit rounded-tl-2xl rounded-tr-2xl transform group-hover:translate-y-[-10px] transition-transform duration-300 ease-in-out" autoPlay muted loop src={project.video}/>
+                                    <video className="w-fit rounded-tl-2xl rounded-tr-2xl transform group-hover:translate-y-[-10px] transition-transform duration-300 ease-in-out" autoPlay muted loop playsInline controls={false} src={project.video}/>
                             </div>
                         </div>
                         ) : (
@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
                                 <img src="/Projects/arrow.svg" className="absolute right-[25px] top-[33px] h-[32px] group-hover:translate-x-3 transition-transform duration-300 ease-in-out"/>
                                 <div className="flex items-center justify-center flex-wrap gap-10 ">
                                     {project?.videos?.map((video) => (
-                                        <video src={video} className="rounded-xl object-contain overflow-hidden max-h-[81vh] max-w-[80vw] group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out" muted autoPlay loop />
+                                        <video src={video} className="rounded-xl object-contain overflow-hidden max-h-[81vh] max-w-[80vw] group-hover:translate-y-[-5px] transition-transform duration-300 ease-in-out" muted autoPlay loop playsInline controls={false} />
                                     ))}
                                 </div>
                             </div>

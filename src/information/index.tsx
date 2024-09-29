@@ -72,7 +72,7 @@
     {
       title: "Software Developer / AI Engineer",
       company_name: "Kayros AI, France",
-      icon: "/public/Experience/kayros.jpeg",
+      icon: "/Experience/kayros.jpeg",
       iconBg: "#383E56",
       date: "Sep 2023 – Mar 2024",
       points: [
@@ -85,7 +85,7 @@
     {
       title: "Mentor",
       company_name: "Microverse, USA",
-      icon: "/public/Experience/microverse.jpg",
+      icon: "/Experience/microverse.jpg",
       iconBg: "#E6DEDD",
       date: "Jun 2022 – Sep 2022",
       points: [
@@ -98,7 +98,7 @@
     {
       title: "Lead Software Developer",
       company_name: "Harchive, Nigeria",
-      icon: "/public/Experience/harchive.png",
+      icon: "/Experience/harchive.png",
       iconBg: "#ffffff",
       date: "May 2022 – Dec 2022",
       points: [
@@ -109,7 +109,7 @@
     {
       title: "Project Manager",
       company_name: "PUP Industries",
-      icon: "/public/Experience/pup.jpeg",
+      icon: "/Experience/pup.jpeg",
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
