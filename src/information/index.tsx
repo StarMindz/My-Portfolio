@@ -169,10 +169,10 @@
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Kayros World (Quest Manager)",
       type: "web",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "AI-powered Web3 platform that enable users earn rewards directly to their wallets by engaging with social media content called Quests.",
       tags: [
         {
           name: "react",
@@ -193,10 +193,10 @@
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Glycobuddy",
       type: "mobile",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "AI-powered application that helps diabetics scan their meals, plan meals, and receive daily personalized meal recommendations.",
       tags: [
         {
           name: "nextjs",
@@ -213,14 +213,14 @@
       ],
       image: "",
       color: "#687870",
-      videos: ["/Projects/glycobuddy1.mp4", "/Projects/glycobuddy2.mp4", "/Projects/glycobuddy2.mp4"],
+      videos: ["/Projects/glycobuddy2.mp4", "/Projects/glycobuddy4.mp4", "/public/Projects/glycobuddy5.mp4"],
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "TEDxSamaru Website",
       type: "web",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Official website for TEDxSamaru, where attendees can find information about upcoming events, register, and receive virtual tickets with a QR code via email.",
       tags: [
         {
           name: "react",
@@ -240,7 +240,31 @@
       video:"/Projects/tedx.mp4",
       source_code_link: "https://github.com/",
     },
-    
+    {
+      name: "WA Health Website",
+      type: "web",
+      description:
+        "Official Website for WA Health, an innovative startup focused on revolutionizing healthcare administration through AI automation.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "scss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "",
+      color: "#00BFFF",
+      video:"/Projects/wahealth.mp4",
+      source_code_link: "https://github.com/",
+    },
+
   ];
   
   export { technologies, experiences, testimonials, projects };

@@ -18,7 +18,7 @@ const Aboutme: React.FC = () => {
           </p>
           <br />
           <p className="text-small tracking-wide leading-loose">
-            With over four years of experience building software solutions and working in remote and startup environments, I have honed my expertise in both frontend and backend technologies, creating scalable and efficient solutions. I also excel in developing AI-powered application and in building AI models using pytorch and tensorflow
+            With over five years of experience building software solutions and working in remote and startup environments, I have honed my expertise in both frontend and backend technologies, creating scalable and efficient solutions. I also excel in developing AI-powered application and in building AI models using pytorch and tensorflow
           </p>
         </div>
         
