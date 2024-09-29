@@ -213,7 +213,7 @@
       ],
       image: "",
       color: "#687870",
-      videos: ["/Projects/glycobuddy2.mp4", "/Projects/glycobuddy4.mp4", "/public/Projects/glycobuddy5.mp4"],
+      videos: ["/Projects/glycobuddy2.mp4", "/Projects/glycobuddy4.mp4", "/Projects/glycobuddy5.mp4"],
       source_code_link: "https://github.com/",
     },
     {
