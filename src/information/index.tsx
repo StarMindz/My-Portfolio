@@ -127,7 +127,7 @@
       name: "Didier Ganthier",
       designation: "Content Reviewer",
       company: "Stack Overflow, USA",
-      image: "/public/Testimonials/didier.jpeg",
+      image: "/Testimonials/didier.jpeg",
     },
     {
       testimonial:
@@ -135,7 +135,7 @@
       name: "Alaa Mekki",
       designation: "Frontend Lead Developer",
       company: "Kayros World, France",
-      image: "/public/Testimonials/alaa.jpeg",
+      image: "/Testimonials/alaa.jpeg",
       url: "https://www.linkedin.com/in/stanley-nnamani"
     },
     {
@@ -144,7 +144,7 @@
       name: "Camilo Vela",
       designation: "Frontend Lead Developer",
       company: "DANE, Colombia",
-      image: "/public/Testimonials/camilo.jpeg",
+      image: "/Testimonials/camilo.jpeg",
       url: "https://www.linkedin.com/in/stanley-nnamani"
     },
     {
@@ -153,7 +153,7 @@
       name: "David Daniel Bdliya",
       designation: "Founder & Lead Strategist",
       company: "Grow With DDB, Nigeria",
-      image: "/public/Testimonials/david.jpeg",
+      image: "/Testimonials/david.jpeg",
       url: "https://www.linkedin.com/in/stanley-nnamani"
     },
     {
@@ -162,7 +162,7 @@
       name: "Daniel Sierra",
       designation: "Lead Developer",
       company: "Horizon, Canada",
-      image: "/public/Testimonials/daniel.jpeg",
+      image: "/Testimonials/daniel.jpeg",
       url: "https://www.linkedin.com/in/stanley-nnamani"
     },
   ];
@@ -189,7 +189,7 @@
       ],
       image: "",
       color:"#BF40BF",
-      video: "/public/Projects/kayros2.mp4",
+      video: "/Projects/kayros2.mp4",
       source_code_link: "https://github.com/",
     },
     {
@@ -213,7 +213,7 @@
       ],
       image: "",
       color: "#687870",
-      videos: ["/public/Projects/glycobuddy1.mp4", "/public/Projects/glycobuddy2.mp4", "/public/Projects/glycobuddy2.mp4"],
+      videos: ["/Projects/glycobuddy1.mp4", "/Projects/glycobuddy2.mp4", "/Projects/glycobuddy2.mp4"],
       source_code_link: "https://github.com/",
     },
     {
@@ -237,7 +237,7 @@
       ],
       image: "",
       color: "#EB0028",
-      video:"/public/Projects/tedx.mp4",
+      video:"/Projects/tedx.mp4",
       source_code_link: "https://github.com/",
     },
     

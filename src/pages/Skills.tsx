@@ -14,7 +14,7 @@ const Skills: React.FC = () => {
             </div>
             <div className="px-[25px] md:px-[50px] lg:px-[100px]">
               <div className="flex flex-row gap-5 items-center justify-center mb-10 md:-mt-20">
-                <img className="w-[50px]" src="/public/Skills/settings.png"/>
+                <img className="w-[50px]" src="/Skills/settings.png"/>
                 <h2 className="text-[18px] md:text-[20px] font-semibold">
                   TOOLS AND TECHNOLOGIES
                 </h2>
