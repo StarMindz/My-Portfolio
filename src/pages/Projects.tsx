@@ -2,6 +2,12 @@ import React from "react";
 import { projects } from "../information";
 
 const Projects: React.FC = () => {
+    const videoElements = document.querySelectorAll('video');
+    videoElements.forEach(video => {
+        video.play().catch(error => {
+        console.error("Error playing video:", error);
+        });
+    });
 
     return (
         <div id="projects" className="w-full flex flex-col min-h-screen items-start py-[100px] px-[25px] md:px-[50px] lg:px-[100px] bg-dark-blue">
