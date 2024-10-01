@@ -42,15 +42,24 @@ const Homepage: React.FC<{ scrollToSection: (sectionId: string) => void }> = ({ 
     return () => clearTimeout(typingTimeout);
   }, [letterIndex, isTyping, texts, currentIndex]);
 
+  const downloadUrl = 'https://drive.google.com/file/d/1lHWJYDkx2TEb6D9zEVigBNyR_e9TEob1/view?usp=sharing';
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.setAttribute('download', '');
+    link.click();
+  };
+
   return (
     <div id="home" className="flex flex-col items-center justify-center w-full h-screen">
-      <div className="flex flex-col items-center justify-start -mt-10">
+      <div className="flex flex-col items-center justify-start -mt-10 w-full">
         <NameText />
         <div className="text-xl mb-5 font-montserrat">(StarMindz)</div>
-        <div className={`text-xl font-bold flex ${texts[currentIndex].colorClass}`}>
-          <span className="text-2xl font-montserrat text-center max-w-[96%]">{currentText}</span>
+        {/* <div className={`text-xl w-[90%] h-[80px] font-bold flex ${texts[currentIndex].colorClass}`}>
+          <span className="text-2xl font-montserrat text-center">{currentText}</span>
           <span className="border-r-2 border-white animate-blink ml-1">&nbsp;</span>
-        </div>
+        </div> */}
         <div className="flex space-x-4 mt-8">
           {/* GitHub */}
           <a
@@ -113,7 +122,7 @@ const Homepage: React.FC<{ scrollToSection: (sectionId: string) => void }> = ({ 
             </span>
           </a>
         </div>
-        <button className="mt-10 shadow-[inset_0_0_0_2px_#616467] text-white px-12 py-4 rounded-full tracking-widest uppercase bg-transparent hover:bg-teal hover:text-white dark:text-neutral-200 transition duration-200 font-montserrat">
+        <button onClick={handleDownload} className="mt-10 shadow-[inset_0_0_0_2px_#616467] text-white px-12 py-4 rounded-full tracking-widest uppercase bg-transparent hover:bg-teal hover:text-white dark:text-neutral-200 transition duration-200 font-montserrat">
           Download Resume
         </button>
       </div>

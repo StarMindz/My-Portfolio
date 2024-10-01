@@ -30,7 +30,7 @@ const Testimonial: React.FC = () => {
   return (
     <div
       id="testimonial"
-      className="w-full flex flex-col py-[100px] px-[25px] md:px-[50px] lg:px-[100px] bg-dark-blue"
+      className="overflow-hidden w-full flex flex-col py-[100px] px-[25px] md:px-[50px] lg:px-[100px] bg-dark-blue"
     >
       <h1 className="text-large font-playfair font-bold">Testimonials</h1>
       <span className="block my-[30px] w-[100px] h-[2px] bg-teal"></span>

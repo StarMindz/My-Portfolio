@@ -22,7 +22,7 @@ const scrollToHome = (page: string) => {
 
 export const NavbarMain: React.FC<{ scrollToSection: (sectionId: string) => void }> = ({ scrollToSection }) => {
   return (
-    <div className="p-4 fixed top-0 z-50 w-screen m-0 flex items-center justify-center">
+    <div className="p-4 fixed top-0 z-50 w-full m-0 flex items-center justify-center">
       <Navbar scrollToSection={scrollToSection} className="top-2 w-fit" />
     </div>
   );

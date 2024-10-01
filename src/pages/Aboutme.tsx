@@ -10,7 +10,7 @@ const Aboutme: React.FC = () => {
         <img className="w-[100%] rounded-full lg:mt-[-100px] h-fit max-w-[450px] lg:w-[35%] md:w-[300px] md:mb-10 mb-10 sm:w-[250px] sm:mb-10 object-cover" src="/stanley.jpg" alt="my picture" style={{ aspectRatio: '1 / 1'}}/>
         <div className="w-full lg:w-[64%]">
           <p className="text-small tracking-wide leading-loose">
-            From a young age, I’ve been captivated by the mechanics of how things work, often taking apart gadgets at home to satisfy my curiosity. This fascination led me to pursue a degree in Computer Engineering in college, where I excelled in courses like Data Structures and Algorithms and graduated at the top of my class with a CGPA of 4.9/5.0.
+            From a young age, I’ve been captivated by the mechanics of how things work, often taking apart gadgets at home to satisfy my curiosity. This fascination led me to pursue a degree in Computer Engineering in University, where I excelled in courses like Data Structures and Algorithms and graduated at the top of my class with a CGPA of 4.9/5.0.
           </p>
           <br />
           <p className="text-small tracking-wide leading-loose">

@@ -40,7 +40,7 @@ const HamburgerMenu: React.FC<{ scrollToSection: (sectionId: string) => void }> 
           </button>
         </div>
         <ul
-          className={`flex flex-col md:flex-row items-start md:items-center justify-start p-10 md:p-0 absolute md:static w-auto right-14 md:right-0 top-20 md:top-0 bg-dark-blue md:bg-transparent transition-all duration-300 ease-in ${
+          className={`flex flex-col md:flex-row items-start md:items-center justify-start p-10 md:p-0 absolute md:static w-full right-14 md:right-0 top-20 md:top-0 bg-dark-blue md:bg-transparent transition-all duration-300 ease-in ${
             isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none md:pointer-events-auto'
           } md:opacity-100`}
         >

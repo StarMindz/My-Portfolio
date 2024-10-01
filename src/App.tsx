@@ -1,6 +1,7 @@
 // import HamburgerMenu from './components/Navbar'
 import { BrowserRouter } from 'react-router-dom'
 import { NavbarMain } from './components/Navbar2'
+import Chatbox from './components/Chatbot/Chatbot'
 import './App.css'
 import Homepage from './pages/Homepage'
 import Aboutme from './pages/Aboutme'
@@ -28,7 +29,7 @@ function App() {
   };
 
   return (
-    <div className=''>
+    <div className='w-screen'>
       <BrowserRouter>
       {/* <HamburgerMenu scrollToSection={scrollToSection} /> */}
       <NavbarMain  scrollToSection={scrollToSection} />
@@ -40,6 +41,7 @@ function App() {
       <Experience />
       <Testimonial />
       <Contact />
+      <Chatbox />
       </BrowserRouter>
     </div>
   )

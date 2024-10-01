@@ -28,6 +28,19 @@ const Contact: React.FC = () => {
     }));
   };
 
+  const scrollToContact = (page: string) => {
+    const section = document.getElementById(page);
+    if (section) {
+      const offset = -400;
+      const sectionPosition = section.getBoundingClientRect().top + window.scrollY;
+  
+      window.scrollTo({
+        top: sectionPosition - offset,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -59,7 +72,7 @@ const Contact: React.FC = () => {
   return (
     <div id="contact" className="w-full relative flex flex-col items-start py-[100px] px-[25px] md:px-[50px] lg:px-[100px] bg-transparent">
       <>
-      <h1 className="text-large font-playfair font-bold">Get in Touch</h1>
+      <h1 className="text-large font-playfair font-bold cursor-pointer" onClick={() => scrollToContact("contact")}>Get in Touch</h1>
       <span className="block my-[30px] w-[100px] h-[2px] bg-teal"></span>
       <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden m-auto w-[100%] md:w-[90%]">
         <div
@@ -123,6 +136,8 @@ const Contact: React.FC = () => {
       </div>
       </>
       <StarsCanvas />
+      <div className="absolute bottom-5 w-[90%] text-center m-auto">© 2024 Stanley Nnamani (StarMindz). All Rights Reserved.</div>
+
     </div>
   );
 };
