@@ -141,7 +141,7 @@ const Chatbox: React.FC = () => {
       </div>
       <div className="chatbox__button">
         <button onClick={toggleChatbox}>
-          <img src="/public/comment-solid (1).svg" alt="chat icon" />
+          <img src="/comment-solid (1).svg" alt="chat icon" />
         </button>
       </div>
     </div>
