@@ -56,10 +56,10 @@ const Homepage: React.FC<{ scrollToSection: (sectionId: string) => void }> = ({ 
       <div className="flex flex-col items-center justify-start -mt-10 w-full">
         <NameText />
         <div className="text-xl mb-5 font-montserrat">(StarMindz)</div>
-        {/* <div className={`text-xl w-[90%] h-[80px] font-bold flex ${texts[currentIndex].colorClass}`}>
-          <span className="text-2xl font-montserrat text-center">{currentText}</span>
+        <div className={`text-xl max-w-[96%] font-bold flex ${texts[currentIndex].colorClass}`}>
+          <span className="text-2xl font-montserrat text-center max-w-[96%]">{currentText}</span>
           <span className="border-r-2 border-white animate-blink ml-1">&nbsp;</span>
-        </div> */}
+        </div>
         <div className="flex space-x-4 mt-8">
           {/* GitHub */}
           <a
