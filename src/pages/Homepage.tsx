@@ -53,7 +53,7 @@ const Homepage: React.FC<{ scrollToSection: (sectionId: string) => void }> = ({ 
 
   return (
     <div id="home" className="flex flex-col items-center justify-center w-full h-screen">
-      <div className="flex flex-col items-center justify-start -mt-10 w-full">
+      <div className="flex flex-col items-center justify-start -mt-10">
         <NameText />
         <div className="text-xl mb-5 font-montserrat">(StarMindz)</div>
         <div className={`text-xl max-w-[96%] font-bold flex ${texts[currentIndex].colorClass}`}>
