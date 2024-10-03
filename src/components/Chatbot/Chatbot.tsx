@@ -84,6 +84,7 @@ const Chatbox: React.FC = () => {
         Here are some project I've worked on in the past:
         ${projectDetails}
       `;
+      console.log(prompt)
 
       const geminiResponse = await fetch('https://medical-presciption-detector-1.onrender.com/portfolio', {
         method: 'POST',
