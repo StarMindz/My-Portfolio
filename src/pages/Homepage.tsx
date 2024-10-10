@@ -41,15 +41,13 @@ const Homepage: React.FC<{ scrollToSection: (sectionId: string) => void }> = ({ 
 
     return () => clearTimeout(typingTimeout);
   }, [letterIndex, isTyping, texts, currentIndex]);
-
-  const downloadUrl = 'https://drive.google.com/file/d/1lHWJYDkx2TEb6D9zEVigBNyR_e9TEob1/view?usp=sharing';
-
+  
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = downloadUrl;
-    link.setAttribute('download', '');
-    link.click();
+    const folderUrl = 'https://drive.google.com/drive/folders/1P2-sviU0xB8qkwOezY4rJkGBqTZ_aU3q?usp=sharing';
+
+    window.open(folderUrl, '_blank');
   };
+  
 
   return (
     <div id="home" className="flex flex-col items-center justify-center w-full h-screen">
