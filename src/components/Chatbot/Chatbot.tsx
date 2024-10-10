@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Chatbot.css';
 import { technologies, testimonials, experiences, projects } from '../../information';
+import chatWithGemini from '../../utils/chat';
 
 // Define the types for messages
 interface Message {
@@ -14,26 +15,24 @@ const Chatbox: React.FC = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const messagesRef = useRef<HTMLDivElement | null>(null);
 
-  const technologyNames = technologies.map((tech) => tech.name);
+// Mapping technology names to a single string
+const technologyNames = technologies.map(tech => tech.name).join(", ");
 
-  const experienceDetails = experiences.map((exp) => ({
-    title: exp.title,
-    company: exp.company_name,
-    date: exp.date,
-    points: exp.points,
-  }));
+// Formatting experience details into a readable string
+const experienceDetails = experiences.map(exp =>
+  `Title: ${exp.title}, Company: ${exp.company_name}, Date: ${exp.date}`
+).join("\n");
 
-  const projectDetails = projects.map((project) => ({
-    name: project.name,
-    description: project.description,
-  }));
+// Formatting project details into a readable string
+const projectDetails = projects.map(project =>
+  `Project Name: ${project.name}, Description: ${project.description}`
+).join("\n");
 
-  const testimonialDetails = testimonials.map((testi) => ({
-    name: testi.name,
-    designation: testi.designation,
-    company: testi.company,
-    testimonial: testi.testimonial,
-  }));
+// Formatting testimonial details into a readable string
+const testimonialDetails = testimonials.map(testi =>
+  `Name: ${testi.name}, Designation: ${testi.designation}, Company: ${testi.company}, Testimonial: "${testi.testimonial}"`
+).join("\n");
+
 
 
   useEffect(() => {
@@ -67,36 +66,27 @@ const Chatbox: React.FC = () => {
     setMessages((prevMessages) => [...prevMessages, userMessage]);
     inputRef.current.value = '';
 
+    const prompt = `
+    User Input: "${text}".
+
+    Context:
+    Here are some of my tech skills and technologies:
+    ${technologyNames}
+
+    Here are some of my past experiences:
+    ${experienceDetails}
+
+    Here are some testimonials about me:
+    ${testimonialDetails}
+
+    Here are some project I've worked on in the past:
+    ${projectDetails}
+    `;
+    console.log(prompt)
+
     try {
-      const prompt = `
-        User Input: "${text}".
-
-        Context:
-        Here are some of my tech skills and technologies:
-        ${technologyNames}
-
-        Here are some of my past experiences:
-        ${experienceDetails}
-
-        Here are some testimonials about me:
-        ${testimonialDetails}
-
-        Here are some project I've worked on in the past:
-        ${projectDetails}
-      `;
-      console.log(prompt)
-
-      const geminiResponse = await fetch('https://medical-presciption-detector-1.onrender.com/portfolio', {
-        method: 'POST',
-        body: JSON.stringify({ message: prompt }),
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
-
-      const geminiData = await geminiResponse.json();
-      const chatbotMessage: Message = { name: 'Chatbot', message: geminiData || 'Response not available.' };
+      const geminiResponse = await chatWithGemini(prompt);
+      const chatbotMessage: Message = { name: 'Chatbot', message: geminiResponse || 'Response not available.' };
       setMessages((prevMessages) => [...prevMessages, chatbotMessage]);
     } catch (error) {
       console.error('Error:', error);
@@ -129,7 +119,7 @@ const Chatbox: React.FC = () => {
               key={index}
               className={`messages__item ${msg.name === 'Chatbot' ? 'messages__item--visitor' : 'messages__item--operator'}`}
             >
-              {msg.message}
+              {`${msg.message}`}
             </div>
           ))}
         </div>

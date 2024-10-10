@@ -7,7 +7,7 @@ const Aboutme: React.FC = () => {
       <p className="w-full lg:w-[65%] text-medium font-semibold leading-[1.5] mt-[1em]">I'm a curious, solution-driven full-stack software developer and AI engineer who loves to tinker, build, and create impactful, tech-driven solutions that make a difference.</p>
       <span className="block my-[30px] w-[100px] h-[2px] bg-teal"></span>
       <div className="flex flex-wrap lg:flex-row-reverse flex-row h-full w-full justify-between">
-        <img className="w-[100%] rounded-full lg:mt-[-100px] h-fit max-w-[450px] lg:w-[35%] md:w-[300px] md:mb-10 mb-10 sm:w-[250px] sm:mb-10 object-cover" src="/stanley.jpg" alt="my picture" style={{ aspectRatio: '1 / 1'}}/>
+        <img className="w-[100%] rounded-full lg:mt-[-100px] h-fit max-w-[450px] lg:w-[35%] md:w-[300px] md:mb-10 mb-10 sm:w-[250px] sm:mb-10 object-cover" src="/6.webp" alt="my picture" style={{ aspectRatio: '1 / 1'}}/>
         <div className="w-full lg:w-[64%]">
           <p className="text-small tracking-wide leading-loose">
             From a young age, I’ve been captivated by the mechanics of how things work, often taking apart gadgets at home to satisfy my curiosity. This fascination led me to pursue a degree in Computer Engineering in University, where I excelled in courses like Data Structures and Algorithms and graduated at the top of my class with a CGPA of 4.9/5.0.
